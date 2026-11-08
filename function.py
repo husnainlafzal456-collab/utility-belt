@@ -1,0 +1,35 @@
+def add(c,d):
+    return c+d
+def subtract(f,j):
+    return f-j
+def multiply(e,f):
+    return e*f
+def divide(a,b):
+    if b==0:
+        return "Cannot devide by zero"
+    return a/b
+while True:    
+    print("====Calculator====")
+    print("1.Addition")
+    print("2.Subtraction")
+    print("3.Multiplication")
+    print("4.Division")
+    print("5.Exit")
+    choice=input("chosse an option:")
+    if choice=="5":
+        print("GoodBye1")
+        break
+    num1=float(input("Enter first number:"))
+    num2=float(input("Enter second number:"))
+    if choice=="1":
+        print("Addition:",add(num1,num2))
+    elif choice=="2":
+        print("Subtraction:",subtract(num1,num2))
+    elif choice=="3":
+        print("Multiplication:",multiply(num1,num2))
+    elif choice=="4":
+        print("Division:",divide(num1,num2))
+    else:
+        print("INVALID CHOICE!")
+          
+ 
